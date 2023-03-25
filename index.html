@@ -1,83 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Alumnos y Temas</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-    }
-    h1 {
-      text-align: center;
-      color: #E31B23;
-    }
-    h2 {
-      color: #E31B23;
-      font-size: 1.3rem;
-      margin-bottom: 0;
-    }
-    p {
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin-top: 0.2rem;
-    }
-    .container {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px 0;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      margin: 20px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentaciones de Alumnos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #004d80;
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        img {
+            width: 200px;
+            height: auto;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image-container img {
+            margin: 10px;
+        }
+        strong {
+            color: #004d80;
+        }
+    </style>
 </head>
 <body>
-  <h1>Lista de Alumnos y Temas</h1>
-  <div class="container">
-    <h2>1.1 Funciones i disseny de components en centres de processament de dades</h2>
-    <p>Jordi Adrover Gonfaus: Páginas 9-10</p>
-    <img src="https://example.com/data_center_image.jpg" alt="Centro de procesamiento de datos">
+    <h1>Presentaciones de Alumnos</h1>
+    <ul>
+        <li><strong>Jordi Adrover Gonfaus:</strong> Funcions i disseny de components en centres de processament de dades (Páginas 9-10)</li>
+        <li><strong>Sergi Miquel:</strong> Punts de distribució del cablatge (POD) (Apartado 1.3.3, Páginas 25-26)</li>
+        <li><strong>Miguel Ángel Serrano:</strong> Organització i seguretat física dels CPD (Apartados 1.4 y 1.4.1, Páginas 27-28)</li>
+        <li><strong>Quim Rius:</strong> Eines de mesura del rendiment (Páginas 51-53)</li>
+        <li><strong>Emanuel Villaseca:</strong> Necessitat de la prevenció de riscos laborals y condicions de treball i salut (Apartados 2, 2.1, Páginas 55-56)</li>
+        <li><strong>Gonzalo Huancas Gonzales:</strong> Documentació de procediments i incidències (Apartado 1.6.2, Páginas 47-48)</li>
+        <li><strong>Christian Cabrera:</strong> Condicions de treball i salut (Apartado 2.2, Páginas 57-59)</li>
+        <li><strong>Alejandro Cuadros:</strong> Sistemes d'alimentació redundant (Apartado 1.5.1, Páginas 37-38)</li>
+        <li><strong>Víctor Vera García:</strong> Requisits en el disseny (Páginas 13-15)</li>
+        <li><strong>Jesús Molina:</strong> Disseny de l'arquitectura (Apartado 1.1.3, Páginas 14-16)</li>
+        <li><strong>Robert Mihailescu:</strong> Arquitectures d'alta disponibilitat (Apartado 1.5, Páginas 35-36)</li>
+      </ul>
+<div class="image-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/IBM_data_center_in_Southfield%2C_Michigan.jpg" alt="Data Center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Servidores_rack.jpg" alt="Servidores en Rack">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Cable_management.jpg" alt="Gestión de cables">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Office_workers_using_computers.jpg" alt="Trabajadores usando computadoras">
+</div>
 
-    <h2>1.1.2 Requisits en el disseny</h2>
-    <p>Víctor Vera García: Páginas 13-15</p>
-    <img src="https://example.com/data_center_design_image.jpg" alt="Diseño de centro de procesamiento de datos">
-
-    <h2>1.1.3 Disseny del'arquitectura</h2>
-    <p>Jesús Molina: Páginas 14-16</p>
-
-    <h2>1.3.3 Punts de distribució del cablatge (POD)</h2>
-    <p>Sergi Miquel: Páginas 25-26</p>
-
-    <h2>1.4 Organització i seguretat física dels CPD</h2>
-    <p>Miguel Ángel Serrano: Páginas 27-33</p>
-    <p> - 1.4.1 Estructures de suport. Bastidors o racks i patchs-panels: Páginas 27-28</p>
-    <img src="https://example.com/server_rack_image.jpg" alt="Estructuras de soporte - Bastidores y paneles de parcheo">
-
-    <h2>1.5 Arquitectures d'alta disponibilitat</h2>
-    <p>Robert Mihailescu: Páginas 35-43</p>
-
-    <h2>1.5.1 Sistemes d'alimentació redundant</h2>
-    <p>Alejandro Cuadros: Páginas 37-38</p>
-
-    <h2>1.6.2 Documentació de procediments i incidències</h2>
-    <p>Gonzalo Huancas Gonzales: Páginas 47-48</p>
-
-    <h2>1.6.3 Eines de mesura del rendiment</h2>
-    <p>Quim Rius: Páginas 51-53</p>
-    
-    <h2>2 Prevenció de riscos laborals</h2>
-    <p>Emanuel Villaseca: Páginas 55-56</p>
-
-    <h2>2.1 Necessitat de la prevenció de riscos laborals i condicions de treball i salut</h2>
-    <p>Emmanuel Villaseca: Páginas 55-56</p>
-
-    <h2>2.2 Condicions de treball i salut</h2>
-    <p>Christian Cabrera: Páginas 57-59</p>
-   </div>
 </body>
 </html>
-
